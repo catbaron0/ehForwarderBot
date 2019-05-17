@@ -89,6 +89,7 @@ Type-specific Information
         message.text = "Image caption"
         message.file = NamedTemporaryFile(suffix=".png")
         message.file.write(binary_data)
+        message.file.seek(0)
         message.filename = "holiday photo.png"
         message.mime = "image/png"
 
